@@ -1,4 +1,4 @@
-# Istio
+# Istio v1.3
 
 [Istio](https://istio.io/) is an open platform for providing a uniform way to integrate microservices, manage traffic flow across microservices, enforce policies and aggregate telemetry data.
 
