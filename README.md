@@ -33,6 +33,7 @@ To enable or disable each component, change the corresponding `enabled` flag.
 - Helm 2.7.2 or newer or alternately the ability to modify RBAC rules is also required
 - If you want to enable automatic sidecar injection, Kubernetes 1.9+ with `admissionregistration` API is required, and `kube-apiserver` process must have the `admission-control` flag set with the `MutatingAdmissionWebhook` and `ValidatingAdmissionWebhook` admission controllers added and listed in the correct order.
 - The `istio-init` chart must be run to completion prior to install the `istio` chart.
+    - Use this command `make all`
 
 ## Resources Required
 
