@@ -15,12 +15,12 @@ namespace:
 crds:
 	echo "Install Istio CRDs"
 	helm package ./istio-init/ || exit 0
-	helm install Istio-init -n istio-system istio-init-1.3.5.tgz || exit 0
+	helm install istio-init -n istio-system istio-init-1.3.5.tgz || exit 0
 	# ISTIO CRDs
 	echo "Check the installation and run -> kubectl get crds | grep 'istio.io' | wc -l"
 
 sleep:
-	sleep 120
+	sleep 240
 
 install:
 	helm package ./
